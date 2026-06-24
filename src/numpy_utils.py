@@ -60,8 +60,12 @@ def describir_array(arr):
     """
     # TODO: imprime forma con arr.shape, tipo con arr.dtype,
     #       mínimo con arr.min() y máximo con arr.max()
-    pass
+    #pass
 
+    print("Forma:, arr.shape")
+    print("Tipo: , arr.dtype")
+    print("Mínimo: , arr.min()")
+    print("Máximo: , arr.max()")
 
 def crear_array_declaraciones(valores_lista):
     """
@@ -78,7 +82,9 @@ def crear_array_declaraciones(valores_lista):
         -> array([1000000., 500000., 2000000.])
     """
     # TODO: usa np.array con el parámetro dtype=np.float64
-    pass
+    #pass
+
+    return np.array(valores_lista , dtype=np.float64)
 
 
 def comparar_lista_vs_array(valores_lista):
@@ -105,7 +111,19 @@ def comparar_lista_vs_array(valores_lista):
     # 2. Convierte valores_lista a array con np.array
     # 3. Calcula el IVA multiplicando el array por 0.19 y guarda en iva_array
     # 4. Imprime ambos resultados con etiquetas
-    pass
+    #pass
+    
+    iva_lista = []
+    for valor in valores_lista:
+        iva_lista.append(valor*0.19)
+
+    arr = np.array(valores_lista, dtype=np.float64)
+    iva_array = arr * 0.19
+
+    print("lista (requiere ciclo for):")
+    print(f" {iva_lista}")
+    print(" array (operacion directa):")
+    print("f {iva_array}")
 
 
 def filtrar_valores_en_rango(valores_lista, minimo, maximo):
@@ -133,8 +151,13 @@ def filtrar_valores_en_rango(valores_lista, minimo, maximo):
     # 2. Recorre valores_lista con un ciclo for
     # 3. Si minimo <= valor <= maximo, agrégalo con .append()
     # 4. Retorna la lista acumulada
-    pass
+    #pass
 
+    filtrados = []
+    for valor in valores_lista:
+        if minimo<= valor <= maximo:
+            filtrados.append(valor)
+    return filtrados
 
 # ===========================================================================
 # SECCIÓN 2: INDEXACIÓN Y SLICING
