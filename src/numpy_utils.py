@@ -180,7 +180,11 @@ def obtener_rango(arr, inicio, fin):
         -> array([      0., 2300000.,  950000.])
     """
     # TODO: usa slicing con arr[inicio:fin]
-    pass
+    #pass
+    
+    return arr[inicio:fin] 
+
+
 
 
 def obtener_ultimos(arr, n):
@@ -199,7 +203,9 @@ def obtener_ultimos(arr, n):
         -> array([ 450000., 1100000.])  (últimos 3 elementos)
     """
     # TODO: usa indexación negativa arr[-n:]
-    pass
+   #pass
+
+    return arr[-n:]
 
 
 def invertir_array(arr):
@@ -217,7 +223,9 @@ def invertir_array(arr):
         -> array([4, 3, 2, 1])
     """
     # TODO: usa slicing con paso -1: arr[::-1]
-    pass
+    #pass
+
+    return arr[::-1]
 
 
 # ===========================================================================
