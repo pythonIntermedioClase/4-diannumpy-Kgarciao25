@@ -151,9 +151,9 @@ def menu_vectorizacion():
 
     #print("\n  (función pendiente de implementar)")
 
-    valores = np.array([1000 , 2000 , 1500])
-    retenciones = calcular_retencion(valores)
-    print (retenciones)
+    #valores = np.array([1000 , 2000 , 1500])
+    #retenciones = calcular_retencion(valores)
+    #print (retenciones)
 
 def menu_ufuncs():
     """Sección 4: funciones universales."""
