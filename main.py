@@ -185,34 +185,34 @@ def menu_boolean_arrays():
     print("\n--- Arrays booleanos ---")
 
     # TODO: descomenta cuando hayas implementado contar_con_ciclo y sumar_con_ciclo
-    # valores_lista = [1_500_000, 850_000, 0, 2_300_000,
-    #                  950_000, 3_200_000, 450_000, 1_100_000]
-    # umbral = 1_000_000
-    # cantidad = contar_con_ciclo(valores_lista, umbral)
-    # total = sumar_con_ciclo(valores_lista)
-    # print(f"\n  contar_con_ciclo:           {cantidad}")
-    # print(f"  np.sum(arr > umbral):       {contar_sobre_umbral(VALORES_DECLARADOS, umbral)}")
-    # print(f"\n  sumar_con_ciclo:            {total}")
-    # print(f"  np.sum(arr):                {np.sum(VALORES_DECLARADOS)}")
+    valores_lista = [1_500_000, 850_000, 0, 2_300_000,
+                     950_000, 3_200_000, 450_000, 1_100_000]
+    umbral = 1_000_000
+    cantidad = contar_con_ciclo(valores_lista, umbral)
+    total = sumar_con_ciclo(valores_lista)
+    print(f"\n  contar_con_ciclo:           {cantidad}")
+    print(f"  np.sum(arr > umbral):       {contar_sobre_umbral(VALORES_DECLARADOS, umbral)}")
+    print(f"\n  sumar_con_ciclo:            {total}")
+    print(f"  np.sum(arr):                {np.sum(VALORES_DECLARADOS)}")
 
     # TODO: descomenta cuando hayas implementado obtener_mascara_mora
-    # mascara = obtener_mascara_mora(DIAS_MORA)
-    # print(f"\n  Máscara de mora: {mascara}")
-    # print(f"  Registros en mora: {np.sum(mascara)} de {len(mascara)}")
+    mascara = obtener_mascara_mora(DIAS_MORA)
+    print(f"\n  Máscara de mora: {mascara}")
+    print(f"  Registros en mora: {np.sum(mascara)} de {len(mascara)}")
 
     # TODO: descomenta cuando hayas implementado filtrar_valores_con_mora
-    # en_mora = filtrar_valores_con_mora(VALORES_DECLARADOS, DIAS_MORA)
-    # print(f"\n  Valores declarados con mora:")
-    # for valor in en_mora:
-    #     print(f"    ${valor:,.0f}")
-    # print(f"  Total en riesgo: ${en_mora.sum():,.0f}")
+    en_mora = filtrar_valores_con_mora(VALORES_DECLARADOS, DIAS_MORA)
+    print(f"\n  Valores declarados con mora:")
+    for valor in en_mora:
+        print(f"    ${valor:,.0f}")
+    print(f"  Total en riesgo: ${en_mora.sum():,.0f}")
 
     # TODO: descomenta cuando hayas implementado contar_sobre_umbral
-    # umbral = 1_000_000
-    # cantidad = contar_sobre_umbral(VALORES_DECLARADOS, umbral)
-    # print(f"\n  Registros sobre ${umbral:,}: {cantidad}")
+    umbral = 1_000_000
+    cantidad = contar_sobre_umbral(VALORES_DECLARADOS, umbral)
+    print(f"\n  Registros sobre ${umbral:,}: {cantidad}")
 
-    print("\n  (función pendiente de implementar)")
+    #print("\n  (función pendiente de implementar)")
 
 
 def menu_np_where():
